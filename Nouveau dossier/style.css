@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Playfair+Display:wght@600&display=swap')
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	font-family:'Montserrat',sans-serif;
+} 
+nav{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-bottom:5px solid #6F6F6F;
+}
+nav h1{
+	font-family:playfair-display;
+	color:#717171;
+	font-size:30px;
+}
+nav .onglets a{
+	text-decoration:none;
+	color:#000;
+	border-bottom:1px solid #000;
+	margin-right:10px;
+} 
+nav .onglets{
+	margin-top:3px;
+	margin-left:300px;
+} 
+header{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	background:url('black-background-10-12.jpg');
+	color:#fff;
+	background-size:cover;
+	padding:40px;
+} 
+header h1{
+	font-family:playfair-display;
+	font-size:50px;
+	margin-top:40px;
+} 
+header h4{
+	border-bottom:2px solid #fff;
+	text-align:center;
+	margin-top:-10px;
+	font-size:20px;
+} 
+header button{
+	border:none;
+	background-color:#fff;
+	font-size:20px;
+	padding:10px 20px;
+	font-family:'playfair-display';
+	cursor:pointer;
+} 
+.main {
+	margin-top:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+} 
+.main .content .card .right img{
+	height:300px;
+	width:400px;
+	margin-top:5px;
+} 
+.main .content .card{
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	margin-bottom:20px;
+} 
+.main .content .card .left{
+	flex:0 30%;
+	background-color:#000;
+	color:#fff;
+	padding:10px 20px; 
+} 
+.main .content .card.right{
+	flex:0 70%;
+}
+footer{
+	margin-top:40px;
+	border-top:5px solid #6F6F6F;
+	background-color:#000;
+	color:#fff;
+	padding:30px 100px;
+}
+footer h1{
+	font-family:'^playfair-display';
+	border-bottom:1px solid #fff;
+	width:20%;
+	padding:5px;
+}
+footer .services{
+	margin-top:-10px;
+	display:flex;
+	flex-wrap:wrap;
+} 
+footer .services .service{
+	margin-top:20px;
+	padding:10px;
+} 
+footer .services .service p{
+	max-width:300px;
+} 
+footer #contact{
+	color:rgb(181, 181, 181);
+} 
+@media screen and (max-width:680px) {	
+nav .onglets{
+		margin-left:0%;
+		margin-bottom:20px; 
+	}
+	.main .card{
+		margin:10px;
+	}
+	.main .content .card .right img{
+		height:200px;
+		width:100%;
+		margin-top:0px;
+	}
+	.main .content .card{
+		display:block;
+	}
+	
+	footer{
+		padding:30px;
+	}
+}
